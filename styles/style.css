@@ -1,0 +1,586 @@
+/* Hero Section Styles */
+
+header {
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+/* Navigation-bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+nav .logo {
+    width: 150px;
+}
+
+nav .navigation-bar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar a {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navigation-bar a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.navigation-bar a:hover::after, .navigation-bar .active::after {
+    width: 100%;
+}
+
+.burger-btn {
+    display: none;
+}
+
+.burger-btn i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hero Content Styles */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-content h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+}
+.btn-hero span, .btn-features span {
+    transition: margin 0.3s;
+}
+.btn-hero:hover span, .btn-features:hover span {
+    margin-left: 5px;
+}
+
+/* Features Section Styles */
+.features {
+    position: relative;
+}
+
+.features-content {
+    width: 100%;
+    box-shadow: 2px 2px 8px 4px #80808047;
+    background-color: white;
+    display: flex;
+    margin: 30px 0;
+    margin-top: -100px;
+}
+
+.features-content-left {
+    flex: 30%;
+    background-color: #149c8f;
+    padding: 100px 30px;
+}
+
+.features-content-left h2 {
+    color: white;
+}
+
+.features-content-right {
+    flex: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(360px, 1fr));
+    grid-column-gap: 10px;
+    padding: 100px 30px;
+}
+
+/* Our Company Values Styles */
+.company-values {
+    background-image: url(../assets/company-value-bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.company-values-container {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+
+.company-image {
+    flex: 50%;
+}
+.company-image img {
+    width: 100%;
+}
+
+.company-content {
+    flex: 50%;
+    padding: 50px 0;
+}
+
+.company-content p {
+    color: #757575;
+}
+
+.company-content img {
+    margin-top: 30px;
+}
+
+/* Experts Section Design */
+.experts {
+    padding: 50px 0;
+    background-color: #009688;
+    text-align: center;
+}
+
+.experts h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.experts p {
+    max-width: 800px;
+    margin: 40px auto;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.expert-btn1 {
+    color: #009688;
+    border: 1px solid white;
+}
+
+.expert-btn2 {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Services Section Styles */
+.services {
+    background-image: url(../assets/services-bg.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+}
+.services-head {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services-head h2 {
+    margin-bottom: 10px;
+}
+
+.services-head p {
+    margin-top: 0;
+    color: #757575;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(360px, 1fr));
+    grid-column-gap: 15px;
+}
+
+/* Different Services Section Styles */
+.different-services {
+    padding: 50px 0;
+}
+.different-services-card {
+    position: relative;
+    height: 360px;
+    
+}
+
+.image img {
+    width: 100%;
+}
+
+.dif-content {
+    width: 85%;
+    background: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    border: 0.5px solid #80808029;
+}
+
+.dif-content h2 {
+    margin-bottom: 5px;
+    transition: color .4s;
+}
+
+.dif-content strong {
+    font-size: 14px;
+    color: #757575;
+}
+
+.dif-content p {
+    color: #757575;
+    margin-bottom: 0;
+}
+
+.dif-content:hover h2 {
+    color: #009688;
+}
+
+/* Twitter Section Styles */
+.twitter-section {
+    background-color: #009688;
+    padding: 50px 0;
+}
+
+.twitter-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter-icon {
+    margin-right: 50px;
+}
+
+.twitter-flex p {
+    max-width: 700px;
+}
+
+.twitter-flex p a {
+    transition: text-decoration .4s;
+}
+
+.twitter-flex p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section Design */
+.footer-section {
+    padding: 60px 0;
+    background-color: #313131;
+}
+
+.footer-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+
+.footer-nav-grid h2 {
+    color: white;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.posts h4 {
+    font-size: 13px;
+    color: white;
+}
+
+.posts span {
+    color: #6b6b6b;
+    font-size: 10px;
+}
+
+.texts {
+    margin-left: 10px;
+}
+.links-container {
+    display: flex;
+}
+
+.links-container a {
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #969595;
+    transition: color .4s;
+}
+
+.links-container a:hover {
+    color: white;
+}
+
+.links-left:first-child {
+    margin-right: 50px;
+}
+
+.links-left a:first-child {
+    margin-top: 0;
+}
+
+.links-left a:last-child {
+    margin-bottom: 0;
+}
+
+.form-container p {
+    color: #969595;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container input {
+    flex: 75%;
+    margin-right: 5px;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container button {
+    flex: 12%;
+    background-color: #009688;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.input-container button i {
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media i {
+    padding: 10px;
+    background-color: #2e2e2e;
+    color: #6b6b6b;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.social-media i:hover {
+    background-color: #31aae2;
+    color: #fff;
+}
+
+.address-container p {
+    color: #969595;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.hr-line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.address-links {
+    display: flex;
+    margin: 10px 0;
+}
+
+.address-links i {
+    display: block;
+    margin-right: 10px;
+    color: #969595;
+}
+
+.address-links span {
+    display: block;
+    color: #969595;
+    font-size: 13px;
+}
+
+/* Footer Section Styles */
+
+footer {
+    background-color: #292929;
+    padding: 20px 0;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copy strong {
+    font-size: 13px;
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+.footer-links a {
+    color: #6b6b6b;
+    font-size: 13px;
+    padding-left: 20px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Laptop and Under */
+@media (max-width: 992px) {
+    nav {
+        position: relative;
+    }
+    nav .navigation-bar {
+        display: flex;
+        flex-direction: column;
+        background-color: #009688;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 1;
+        width: 230px;
+        transition: width .5s;
+    }
+
+    nav .toggle {
+        width: 0;
+    }
+
+    nav .navigation-bar li {
+        padding: 10px 30px;
+    }
+    nav .navigation-bar li:first-child {
+        padding-top: 100px;
+    }
+    nav .navigation-bar a {
+        display: inline-block;
+    }
+    .burger-btn {
+        position: absolute;
+        z-index: 22;
+        top: 40px;
+        right: 50px;
+        display: block;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    .hero-content h3 {
+        font-size: 22px;
+    }
+    .features-content {
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .features-content-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive Design for Teblate and Under */
+@media (max-width: 768px) {
+    .features-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .features-content-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .company-values-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .experts h2 {
+        font-size: 20px;
+    }
+    .dif-content {
+        top: 25%;
+    }
+    .twitter-flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    .hero-content h1 {
+        font-size: 22px;
+    }
+    .hero-content h3 {
+        font-size: 18px;
+    }
+    .buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .expert-btn1 {
+        width: 100%;
+    }
+    .expert-btn2 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-nav-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-copy {
+        display: block;
+        text-align: center;
+    }
+    .footer-copy strong {
+        margin-bottom: 15px;
+        display: block;
+    }
+    .footer-links a {
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,87 @@
+/* External Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/*General Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-size: 45px;
+    color: white;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #404040;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 25px;
+    color: white;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    color: white;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: #757575;
+    width: 160px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.card {
+    display: flex;
+}
+
+.icons {
+    margin-right: 30px;
+}
+.content h2 {
+    margin-top: 0;
+}
+.content p {
+    color: #757575;
+    margin-bottom: 40px;
+}
